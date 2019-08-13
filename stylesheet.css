@@ -74,6 +74,7 @@ h1 {
   margin-top: 3.2em; }
 
 h2 {
+  page-break-before: always;
   font-size: 1em;
   margin-top: 0.5em;
   margin-bottom: 0.5em; }
@@ -183,7 +184,7 @@ blockquote {
     text-indent: 0; }
 
 pre, tt, code, samp, kbd {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Palatino", "Times New Roman", Caecilia, serif;
   word-wrap: break-word; }
 
 pre {
@@ -493,6 +494,10 @@ table.footnote {
 .poetry {
   margin: 1em; }
 
+.poetry p {
+  text-indent: 0;
+}
+
 /*line number */
 .ln {
   float: left;
@@ -638,9 +643,11 @@ tt, pre, .mono {
 
   /* Sass wants to add em to the end..., hardcoded for now */
   h1 {
+    page-break-before: always;
     font-size: 2em; }
 
   h2 {
+    page-break-before: always;
     font-size: 1em; }
 
   h3 {
